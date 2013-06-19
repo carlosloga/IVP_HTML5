@@ -29,12 +29,8 @@
                     <li data-role="list-divider" role="heading">
                         <table style="width:99%;"><tr  style="width:98%;">
                         <td  style="width:29%;">Nou comunicat</td>
-<<<<<<< HEAD
                         <td style="width:70%; text-align:right;">
-                        <button onclick="brows();" id="buttonGUARDAR" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" data-mini="true" style="width:100%;">guardar/enviar</button></td>
-=======
                         <td style="width:70%; text-align:right;"><button onclick="enviarOK()" id="buttonGUARDAR" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" data-mini="true" style="width:100%;">guardar/enviar</button></td>
->>>>>>> demo_Parets
                         </tr></table>
                     </li>
                     <li data-theme="b">
@@ -66,7 +62,7 @@
                                 </div>
                             </div>
                             
-                            <!--Localitzaci�-->
+                            <!--Localitzacio-->
                             <div data-role="collapsible" data-collapsed="true" id="divLOCALITZACIO">
                                 <h3>                                                                        
                                     <table style="width:100%;"><tr>
@@ -135,7 +131,7 @@
                                                     </tr>
                                                     <tr>
                                                     <td style="width:30%;">atribut text</td>
-                                                    <td style="width:70%;"><input type="text" name="textATR2" id="textATR2" placeholder="una descripci� ..." /></td>
+                                                    <td style="width:70%;"><input type="text" name="textATR2" id="textATR2" placeholder="una descripció ..." /></td>
                                                     </tr>
                                                 </table>
                                             </li>
@@ -205,15 +201,14 @@
         }, false);
 
     function onDeviceReady() {
-<<<<<<< HEAD
+
         alert('Phonegap READY');
         alert('jQueryMobile READY');
 =======
 //alert('phonegap ready');
      $document.on('ready',function () {		
 //alert('jQuery ready');
->>>>>>> demo_Parets
-        //Configuraci�n del calendario 
+        //Configuracion del calendario 
         jQuery.extend(jQuery.mobile.datebox.prototype.options.lang, {
             'cat': {
                 setDateButtonLabel: "OK",
@@ -224,12 +219,12 @@
                 titleTimeDialogLabel: "Hora",
                 daysOfWeek: ['diumenge', 'dilluns', 'dimarts', 'dimecres', 'dijous', 'divendres', 'disabte'],
                 daysOfWeekShort: ['Dm', 'Dl', 'Dm', 'Dx', 'Dj', 'Dv', 'Ds'],
-                monthsOfYear: ['Gener', 'Febrer', 'Mar�', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre'],
+                monthsOfYear: ['Gener', 'Febrer', 'Març', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre'],
                 monthsOfYearShort: ['Gen', 'Feb', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Des'],
                 durationLabel: ['Dies', 'Hores', 'Minuts', 'Segons'],
                 durationDays: ['Dia', 'Dies'],
                 tooltip: "Obrie selector de dates",
-                nextMonth: "Seg�ent Mes",
+                nextMonth: "Següent Mes",
                 prevMonth: "Mes anterior",
                 timeFormat: 24,
                 headerFormat: '%A, %B %-d, %Y',
@@ -310,14 +305,14 @@
     }
 
     function onFail_hacerFoto(message) {
-        alert('Error c�mara : ' + message);
+        alert('Error càmara : ' + message);
     }
 
-<<<<<<< HEAD
+
 	function brows() {
 	var ref = window.open('http://213.27.242.251:8000/AJVILA/Archivos/FOTOS/Horari.pdf', '_blank', 'location=yes');
 	}
-=======
+
     function enviarOK(){
         mensaje('Incidència enviada OK ! ');
     }
@@ -332,7 +327,6 @@
         else
             alert(msg);
     }
->>>>>>> demo_Parets
 
 </script>
 </body>
