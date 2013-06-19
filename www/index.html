@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+<title>IVP_HTML5</title>
+
+<link rel="Stylesheet" href="jQueryMobile/css/themes/default/jquery.mobile-1.2.0.min.css" /> 
+<link rel="Stylesheet" href="Content/jquery.mobile.datebox-1.0.1.min.css" />
+<script src="jQueryMobile/js/jquery.js"></script>
+<script src="jQueryMobile/js/jquery.mobile-1.2.0.min.js"></script> 
+<script src="Scripts/jquery.mobile.datebox-1.0.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
+
+<!-- <script src="phonegap.js"></script> -->
+<!-- <script src="childbrowser.js"></script> -->
+
+<<<<<<< HEAD
+=======
+<script src="phonegap.js"></script>
+>>>>>>> demo_Parets
+</head>
+<body>
+<div data-role="page">
+        <div data-role="header" data-theme="d">
+            <h3>IVP v.201302071405</h3>
+            <a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+        </div>
+        <div data-role="content">
+            <div>
+                <div class="content-primary" id="divNOUCOMUNICAT">
+                <h4>
+                <ul data-role="listview" data-divider-theme="a" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        <table style="width:99%;"><tr  style="width:98%;">
+                        <td  style="width:29%;">Nou comunicat</td>
+<<<<<<< HEAD
+                        <td style="width:70%; text-align:right;">
+                        <button onclick="brows();" id="buttonGUARDAR" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" data-mini="true" style="width:100%;">guardar/enviar</button></td>
+=======
+                        <td style="width:70%; text-align:right;"><button onclick="enviarOK()" id="buttonGUARDAR" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" data-mini="true" style="width:100%;">guardar/enviar</button></td>
+>>>>>>> demo_Parets
+                        </tr></table>
+                    </li>
+                    <li data-theme="b">
+                        <div data-theme="b" data-role="collapsible-set" style="background-color: Silver">                                                        
+                            <!--Data i hora-->
+                            <div data-role="collapsible" data-collapsed="true" id="divDATAHORA">
+                                <h3>
+                                    <table style="width:100%;">
+                                        <tr>
+                                            <td style="width: 80%; text-align: left;">
+                                                Data i hora&nbsp;
+                                            </td>
+                                            <td style="width: 10%; text-align: right;">
+                                                <label for="basic" id="labelDATA" style="color: Black; text-align:right; font-size:small;">20/06/2012</label>
+                                            </td>
+                                            <td style="width: 10%; text-align: right;">
+                                                <label for="basic" id="labelHORA" style="color: Black; text-align:right; font-size:small;">12:00:00</label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </h3>
+                                <div>
+                                     <table style="width:100%"><tr><td style="width: 10%;">data</td><td style="width: 90%;">
+                                     <input name="dateboxDIA" id="dateboxDIA" type="date" data-role="datebox" data-options='{"mode": "calbox", "calStartDay": 1, "dateFormat":"dd/mm/YYYY", "calUsePickers": true, "calNoHeader": true }' />
+                                     </td></tr>
+                                     <tr><td style="width: 10%;">hora</td><td style="width: 90%;">
+                                     <input name="dateboxHORA" id="dateboxHORA" type="date" data-role="datebox" onchange="" data-options='{"mode": "timeflipbox"}' />
+                                     </td></tr></table>
+                                </div>
+                            </div>
+                            
+                            <!--Localitzaci�-->
+                            <div data-role="collapsible" data-collapsed="true" id="divLOCALITZACIO">
+                                <h3>                                                                        
+                                    <table style="width:100%;"><tr>
+                                    <td style="width: 10%;">localització</td>
+                                    <td style='width:25%; text-align:right; font-size:small; vertical-align:middle; color:Black; text-align:right;'>41.2348858 , 2.12883</td>
+                                    <td style='width:65%; text-align:right; font-size:small; vertical-align:middle; color:Black; text-align:right;'>carrer Tuset, 5</td>
+                                    </tr></table>
+                                </h3>
+                                <div>
+                                    <button onclick="" id="buttonPLANOL" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" style="width:100%;">sobre Plànol</button>
+                                    <div>
+                                        <ul data-role="listview" data-divider-theme="a" data-inset="true" data-theme="b">
+                                            <li data-role="list-divider" role="heading" data-theme="b">selecció manual</li>
+                                            <li data-theme="b">    
+                                                <table style="width:100%" border="0">
+                                                    <tr>
+                                                    <td colspan="2" style="width:20%">tipus de via</td>
+                                                    <td style="width:80%"><select name="selectTIPUSVIA" id="selectTIPUSVIA" data-mini="true" data-theme="d"></select></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td style="width:10%">via</td>
+                                                    <td colspan="2" style="width:90%"><select name="selectVIA" id="selectVIA" data-mini="true" data-theme="d"></select></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td style="width:10%">numero</td>
+                                                    <td colspan="2" style="width:90%"><select name="selectNUMEROPORTAL" id="selectNUMEROPORTAL" data-mini="true" data-theme="d"></select></td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Tipus de comunicat-->
+                            <div data-role="collapsible" data-collapsed="true" id="divTIPUSCOMUNICAT">
+                                <h3>
+                                    <table style="width:100%;"><tr> 
+                                    <td style="width: 20%;">tipus de comunicat</td>
+                                    <td style='width:80%; text-align:right; font-size:small; vertical-align:middle; color:Black;'>contenidors / cartró / trencat</td>
+                                    </tr></table>
+                                </h3>                                
+                                <div>
+                                    <table style="width:100%;" border="0" cellspacing="1" cellpadding="1" align="center">
+                                        <tr>
+                                        <td style="width:10%;">&agrave;mbit</td>
+                                        <td style="width:90%;"><select name="selectAMBIT" id="selectAMBIT" data-mini="true" data-theme="d"></select></td>
+                                        </tr>
+                                        <tr>
+                                        <td style="width:10%;">element</td>
+                                        <td style="width:90%;"><select name="selectELEMENT" id="selectELEMENT" data-mini="true" data-theme="d"></select></td>
+                                        </tr>
+                                        <tr>
+                                        <td style="width:10%;">item</td>
+                                        <td style="width:90%;"><select name="selectITEM" id="selectITEM" data-mini="true" data-theme="d"></select></td>
+                                        </tr>
+                                        </table>
+                                        <div>
+                                        <ul data-role="listview" data-divider-theme="a" data-inset="true" data-theme="b">
+                                            <li data-role="list-divider" role="heading" data-theme="b">mes informació del comunicat (atributs)</li>
+                                            <li data-theme="b">    
+                                                <table style="width:100%;" border="0" cellspacing="1" cellpadding="1" align="center">
+                                                    <tr>
+                                                    <td style="width:30%;">atribut llista</td>
+                                                    <td style="width:70%;"><select name="selectATR1" id="selectATR1" data-mini="true" data-theme="d"></select></td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td style="width:30%;">atribut text</td>
+                                                    <td style="width:70%;"><input type="text" name="textATR2" id="textATR2" placeholder="una descripci� ..." /></td>
+                                                    </tr>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                            <!--Fotos, video, so -->
+                            <div data-role="collapsible" data-collapsed="true" id="divMULTIMEDIA">
+                                <h3>
+                                    <table style="width:100%;"><tr> 
+                                    <td style="width: 20%;">fotos, video, so</td>
+                                    <td style='width:80%; text-align:right; font-size:small; vertical-align:middle; color:Black;'>2 fotos, 1 so, 1 video</td>
+                                    </tr></table>
+                                </h3>                                
+                                <div>
+                                    <table style="width:100%;" cellspacing="1" cellpadding="1">
+                                        <tr>
+                                        <td style="width:33%; text-align=center;"><button onclick="hacerFoto();" id="buttonFOTO" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" style="width:100%;">nova foto</button></td>
+                                        <td style="width:33%; text-align=center;"><button onclick="" id="buttonVIDEO" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" style="width:100%;">nou video</button></td>
+                                        <td style="width:33%; text-align=center;"><button onclick="" id="buttonSO" data-inline="true" data-icon="" data-iconpos="right" data-theme="b" style="width:100%;">nou so</button></td>
+                                        </tr>
+                                    </table>
+
+                                       <div>
+                                        <ul data-role="listview" data-divider-theme="a" data-inset="true">
+                                            <li data-role="list-divider" role="heading" data-theme="b">existents per aquest comunicat</li>
+                                            <li data-theme="b"> 
+                                                <div style="overflow-x:scroll; -webkit-overflow-scrolling:touch;">
+                                                    <img alt="" src="Fotos/Koala.jpg" height="80px" onclick="verFotoGrande('Koala.jpg');" />
+                                                    <img alt="" src="Fotos/Lighthouse.jpg" height="80px" onclick="verFotoGrande('Lighthouse.jpg');" />  
+                                                    <img alt="" src="Fotos/so.png" height="80px" />  
+                                                    <img alt="" src="Fotos/video.png" height="80px" />  
+                                                </div>
+                                            </li>
+                                        </ul>
+                                       </div>
+                                       <!-- <img id="smallImage" height="80px" /> -->
+                                </div>
+                            </div>
+
+                            <!--Observacions-->
+                            <div data-role="collapsible" data-collapsed="true" id="divOBSERVACIONS">
+                                <h3>
+                                    <table style="width:100%;"><tr> 
+                                    <td style="width: 20%;">observacions</td>
+                                    <td style='width:80%; text-align:right; font-size:small; vertical-align:middle; color:Black;'>S'ha trencat una de les quatre  ...</td>
+                                    </tr></table>
+                                </h3>                                
+                                <div>
+                                    <textarea id='textareaOBSERVACIONS' rows='4' cols='80' style="height:100%; overflow:scroll;">S'ha tencat una de les quatre rodes del contenidor</textarea>
+                                </div>
+                            </div>
+                    
+                    </li>
+                </ul>
+                </h4>
+                </div>                   
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+	window.addEventListener('load', function () {
+            document.addEventListener("deviceready", onDeviceReady, false); 
+        }, false);
+
+    function onDeviceReady() {
+<<<<<<< HEAD
+        alert('Phonegap READY');
+        alert('jQueryMobile READY');
+=======
+//alert('phonegap ready');
+     $document.on('ready',function () {		
+//alert('jQuery ready');
+>>>>>>> demo_Parets
+        //Configuraci�n del calendario 
+        jQuery.extend(jQuery.mobile.datebox.prototype.options.lang, {
+            'cat': {
+                setDateButtonLabel: "OK",
+                setTimeButtonLabel: "OK",
+                setDurationButtonLabel: "OK",
+                calTodayButtonLabel: "avui",
+                titleDateDialogLabel: "Data",
+                titleTimeDialogLabel: "Hora",
+                daysOfWeek: ['diumenge', 'dilluns', 'dimarts', 'dimecres', 'dijous', 'divendres', 'disabte'],
+                daysOfWeekShort: ['Dm', 'Dl', 'Dm', 'Dx', 'Dj', 'Dv', 'Ds'],
+                monthsOfYear: ['Gener', 'Febrer', 'Mar�', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre'],
+                monthsOfYearShort: ['Gen', 'Feb', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Des'],
+                durationLabel: ['Dies', 'Hores', 'Minuts', 'Segons'],
+                durationDays: ['Dia', 'Dies'],
+                tooltip: "Obrie selector de dates",
+                nextMonth: "Seg�ent Mes",
+                prevMonth: "Mes anterior",
+                timeFormat: 24,
+                headerFormat: '%A, %B %-d, %Y',
+                dateFieldOrder: ['d', 'm', 'y'],
+                timeFieldOrder: ['h', 'i', 'a'],
+                slideFieldOrder: ['d', 'm', 'y'],
+                dateFormat: '%d/%m/%Y',
+                useArabicIndic: false,
+                isRTL: false,
+                calStartDay: 0,
+                clearButton: 'netejar',
+                durationOrder: ['d', 'h', 'i', 's'],
+                meridiem: ['AM', 'PM'],
+                timeOutput: '%k:%M', // 12hr: '%l:%M %p', 24hr: '%k:%M'
+                durationFormat: '%Dd %DA, %Dl:%DM:%DS'
+            }
+        });
+        jQuery.extend(jQuery.mobile.datebox.prototype.options, {
+            useLang: 'cat'
+        });
+        
+      }    
+
+    function verFotoGrande(foto) {
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSys) {
+		 fileSys.root.getDirectory("Fotos", {create: false}).getFile(foto,null, function(fileEntry){
+			fileEntry.file(function (file){
+				var reader = new FileReader();
+    				reader.onloadend = function(evt) {
+					alert('leido : ' + evt.target.result);
+					window.plugins.childBrowser.showWebPage(evt.target.result);
+    				};
+    				reader.readAsDataURL(file);
+			} , function(evt){ alert('Error : ' + evt.target.error.code); });
+		 } ,
+		 function(evt) {alert('Error : ' + evt.target.error.code);}
+		);
+//            var pathToRoot = fileSys.root.fullPath;
+//            alert(pathToRoot + "/" + foto);
+//            window.plugins.childBrowser.showWebPage(pathToRoot + "/" + foto);
+        });
+    }
+
+    function hacerFoto() {
+//alert('hacerFoto');
+// Devuelve la image como base64-encoded string
+
+    navigator.camera.getPicture(
+        function(uri) {
+            var img = document.getElementById('smallImage');
+            img.style.visibility = "visible";
+            img.style.display = "block";
+            img.src = uri;
+//alert('uri = ' + uri);
+        },
+        { quality: 50, allowEdit: true, destinationType: navigator.camera.DestinationType.FILE_URI});
+
+// navigator.camera.getPicture(onSuccess_hecerFoto, onFail_hacerFoto, { quality: 50,destinationType: destinationType.DATA_URL});
+
+    }
+
+    function onSuccess_hecerFoto(imageData) {
+        // Uncomment to view the base64 encoded image data
+        // console.log(imageData);
+
+        // Get image handle
+        //
+        var smallImage = document.getElementById('smallImage');
+
+        // Unhide image elements
+        //
+        smallImage.style.display = 'block';
+
+        // Show the captured photo
+        // The inline CSS rules are used to resize the image
+        //
+        smallImage.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    function onFail_hacerFoto(message) {
+        alert('Error c�mara : ' + message);
+    }
+
+<<<<<<< HEAD
+	function brows() {
+	var ref = window.open('http://213.27.242.251:8000/AJVILA/Archivos/FOTOS/Horari.pdf', '_blank', 'location=yes');
+	}
+=======
+    function enviarOK(){
+        mensaje('Incidència enviada OK ! ');
+    }
+
+    function phoneGapRun() {
+        return(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/));
+    }
+
+    function mensaje(msg) {
+        if(phoneGapRun())
+            navigator.notification.alert(msg, null, 'Atenció');
+        else
+            alert(msg);
+    }
+>>>>>>> demo_Parets
+
+</script>
+</body>
+</html>
