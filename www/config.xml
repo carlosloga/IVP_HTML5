@@ -6,7 +6,7 @@
 <name>IVP_HTML5</name>
 <description>IVP MultiDispositiu</description>
 <author href="https://example.com" email="you@example.com">CLG</author>
-<preference name="phonegap-version" value="2.3.0" />
+<preference name="phonegap-version" value="2.7.0" />
 <plugin name="Notification" value="CDVNotification" />
 <plugin name="Camera" value="CDVCamera" />
 <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
